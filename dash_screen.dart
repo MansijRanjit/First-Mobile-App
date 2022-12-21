@@ -10,6 +10,16 @@ class DashScreen extends StatelessWidget {
         title: Text("Welcome"),
         centerTitle: true,
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+               label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: "Profile")
+        ],
+      ),
     );
   }
 }
