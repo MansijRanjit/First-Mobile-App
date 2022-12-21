@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 
-class DashScreen extends StatelessWidget {
+import 'HomeScreen.dart';
+import 'Profile.dart';
+
+class DashScreen extends StatefulWidget {
   const DashScreen({Key? key}) : super(key: key);
+
+  @override
+  State<DashScreen> createState() => _DashScreenState();
+}
+
+class _DashScreenState extends State<DashScreen> {
+
+  static final List<Widget> _pages =<Widget>[
+    HomeScreen(),
+    Profile()
+  ];
 
   @override
   Widget build(BuildContext context) {
